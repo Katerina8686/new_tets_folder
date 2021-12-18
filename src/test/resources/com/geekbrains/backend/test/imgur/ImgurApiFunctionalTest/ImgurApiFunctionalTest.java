@@ -165,7 +165,7 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
                 .expectHeader("Access-Control-Allow-Credentials", "true")
                 .build();
 
-
+clear
         given()
                 .auth()
                 .oauth2(TOKEN)

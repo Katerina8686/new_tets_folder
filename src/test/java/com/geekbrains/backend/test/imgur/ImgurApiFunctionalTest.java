@@ -143,12 +143,12 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
                 .log()
                 .all()
                 .expect()
-                .spec(responseSpecification);
-                //.body("data.title", is("my frog"))
-                //.log()
-                //.all()
-               // .when()
-               // .get("image/Mxzxrkm");
+                .spec(responseSpecification)
+                .body("data.title", is("my frog"))
+                .log()
+                .all()
+                 .when()
+                 .get("image/Mxzxrkm");
     }
 
 
@@ -172,13 +172,13 @@ public class ImgurApiFunctionalTest extends FunctionalTest {
                 .log()
                 .all()
                 .expect()
-                .spec(responseSpecification);
-                //.statusCode(200)
-               // .log()
-               // .all()
-               // .when()
-               // .delete("image/j3uxNTdA2OrJXH6");
+                .spec(responseSpecification)
+                .statusCode(200)
+                 .log()
+                   .all()
+                   .when()
+                   .delete("image/j3uxNTdA2OrJXH6");
     }
 
-    // TODO: 08.12.2021 Домашка протестировать через RA минимум 5 различных end point-ов
+
 }
